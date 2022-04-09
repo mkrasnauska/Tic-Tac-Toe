@@ -1,0 +1,48 @@
+/*heading style */
+h1 {
+    text-align: center;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px #807c7c;
+}
+/*background color. */
+body {
+    background-color: rgb(249, 250, 250);
+}
+
+
+/* Table and Canvas container. */
+.center-container {
+    /* This property sets the width of our container. */
+    width: 608px;
+    /* this property centers container. */
+    margin: 0 auto;
+    /* 50 px down from top */
+    margin-top: 50px;
+}
+
+table {
+    /* This property collapse table borders into 1 border. */
+    border-collapse: collapse;
+    /* This hides outer borders on table. */
+    border-style: hidden;
+}
+
+td {
+    /* This property changes the cursor to the index finger hand when hovered over td elements. */
+    cursor: pointer;
+    /* This property sets table border style. */
+    border: 4px solid rgba(38, 24, 62, 0.8);
+    /* This property removes default padding */
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    /* This property sets the position of canvas to the top left corner of our container. */
+    position: absolute;
+    /* This property places canvas over the top of table. */
+    z-index: 10;
+    /* This property makes canvas invisible */
+    pointer-events: none;
+}
